@@ -27,7 +27,7 @@ namespace Value_and_Reference_Types_Exercise_01
             // TODO: Use the ChangeValueType() function to "change the value type" for each variable
             // ChangeValueType(yourVariable);
 
-            AddSpace();
+            AddSmallBreak();
 
             // Thought Experiment: What will the value of the original variable be after going through the ChangeValueType() method?
             // TODO: Double variable value = ?
@@ -42,7 +42,7 @@ namespace Value_and_Reference_Types_Exercise_01
 
             #endregion
 
-            AddSection();
+            AddLargeBreak();
 
             #region Reference Type TODOs
 
@@ -125,19 +125,14 @@ namespace Value_and_Reference_Types_Exercise_01
 
         #region Utility Methods
 
-        public static void AddSmallSpace()
-        {
-            Console.WriteLine();
-        }
-
-        public static void AddSpace()
+        public static void AddSmallBreak()
         {
             Console.WriteLine();
             Console.WriteLine("*********************************************************");
             Console.WriteLine();
         }
 
-        public static void AddSection()
+        public static void AddLargeBreak()
         {
             Console.WriteLine();
             Console.WriteLine();
