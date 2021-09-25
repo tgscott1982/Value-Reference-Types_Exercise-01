@@ -16,7 +16,7 @@ namespace Value_and_Reference_Types_Exercise_01
         {
             #region Value Type TODOs 
 
-            // TODO: Declare and initialize 3 value type variables of types: double, int, and string
+            // TODO: Use the 3 value type variables that are already declared and initialized below
             double myDouble = .005;
             int myInteger = 10;
             string myString = "Hello World";
@@ -37,8 +37,8 @@ namespace Value_and_Reference_Types_Exercise_01
             // Why:
             // Answer: ?
 
-            // TODO: Write out the original variable to the console after being changed by the ChangeValueType() function
-            // Console.WriteLine($"Original: {yourVariable}");
+            // TODO: Write out the variable to the console after being passed through the ChangeValueType() function
+            // Console.WriteLine($"Adjusted: {yourVariable}");
 
             #endregion
 
@@ -67,7 +67,7 @@ namespace Value_and_Reference_Types_Exercise_01
             // Answer: ?
 
 
-            // TODO: Write out the original variables to the console after being changed by the ChangeReferenceType() function
+            // TODO: Write out the adjusted variables to the console after being passed through the ChangeReferenceType() function
 
 
             #endregion
