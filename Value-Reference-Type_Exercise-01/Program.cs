@@ -23,26 +23,36 @@ namespace Value_and_Reference_Types_Exercise_01
 
             // TODO: Write out each of these to the Conosle like so:
             // Console.WriteLine($"Before: {yourVariable}");
+            Console.WriteLine(myDouble);
+            Console.WriteLine(myInteger);
+            Console.WriteLine(myString);
 
             // TODO: Use the ChangeValueType() function to "change the value type" for each variable
             // ChangeValueType(yourVariable);
+            ChangeValueType(myDouble);
+            ChangeValueType(myInteger);
+            ChangeValueType(myString);
 
             AddSmallBreak();
 
             // Thought Experiment: What will the value of the original variable be after going through the ChangeValueType() method?
-            // TODO: Double variable value = ?
-            // TODO: Integer variable value = ?
-            // TODO: String variable value = ?
+            // TODO: Double variable value = ? .005
+            // TODO: Integer variable value = ? 10
+            // TODO: String variable value = ? "Hello World"
 
             // Why:
-            // Answer: ?
+            // Answer: ? Nothing. They're already given values above and when plugging them into the method, their value becomes the value 
+            //in the method.
 
             // TODO: Write out the variable to the console after being passed through the ChangeValueType() function
             // Console.WriteLine($"Adjusted: {yourVariable}");
+            Console.WriteLine($"Adjusted: {myDouble}");
+            Console.WriteLine($"Adjusted: {myInteger}");
+            Console.WriteLine($"Adjusted: {myString}");
 
             #endregion
 
-            AddLargeBreak();
+AddLargeBreak();
 
             #region Reference Type TODOs
 
@@ -53,10 +63,22 @@ namespace Value_and_Reference_Types_Exercise_01
             Dog myDogObject = new Dog { name = "Lassy" };
 
             // TODO: Write out each of these to the Conosle. Remember to use a loop for the list and array!
-
+            Console.WriteLine(sb);
+            foreach (var number in myList)
+            {
+                Console.WriteLine(number);
+            }
+            foreach (var number in myArray)
+            {
+                Console.WriteLine(number);
+            }
+            Console.WriteLine(myDogObject.name);
 
             // TODO: Use the ChangeReferenceType() function to "change the reference" for each variable
-
+            ChangeReferenceType(sb);
+            ChangeReferenceType(myList);
+            ChangeReferenceType(myArray);
+            ChangeReferenceType(myDogObject);
             // Thought Experiment: What will the value of the original variable be after going through the ChangeReferenceType() method?
             // TODO: StringBuilder variable value = ?
             // TODO: List<int> variable values = ?
@@ -64,11 +86,20 @@ namespace Value_and_Reference_Types_Exercise_01
             // TODO: Dog object variable's name = ?
 
             // Why:
-            // Answer: ?
+            // Answer: ? References are not values, or are not fixed, they can be changed by moving things in and out of the reference
 
 
             // TODO: Write out the adjusted variables to the console after being passed through the ChangeReferenceType() function
-
+            Console.WriteLine(sb);
+            foreach (var number in myList)
+            {
+                Console.WriteLine(number);
+            }
+            foreach (var number in myArray)
+            {
+                Console.WriteLine(number);
+            }
+            Console.WriteLine(myDogObject.name);
 
             #endregion
         }
